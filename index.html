@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pondok Pesantren Al-Fattah Siman, Lamongan</title><link rel="icon" href="logo.png">
+<meta name="description" content="Pondok Pesantren Al-Fattah Siman, Sekaran, Lamongan. Didirikan KH Abdul Fattah tahun 1942. Informasi program, kegiatan santri, dan pendaftaran santri baru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0f4c3a;--g2:#0a3428;--mint:#f2f7f3;--gold:#b8893a;--ink:#14201a;--mut:#5b6b62;--line:#d6e2da;--w:#fff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:16px/1.65 "Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--w)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.alt{background:var(--mint)}
+h2{font:700 clamp(26px,5vw,36px)/1.2 Amiri,serif;color:var(--g);margin-bottom:12px}
+.lead{color:var(--mut);max-width:60ch;margin-bottom:32px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--gold);background:var(--gold);color:#fff;cursor:pointer;font-size:15px;font-family:inherit}
+.btn.o{background:transparent;color:#fff;border-color:#ffffff88}
+.btn.g{background:var(--g);border-color:var(--g)}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:var(--g2);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 19px Amiri,serif}
+.brand img{width:36px;height:36px;border-radius:50%;background:#fff;object-fit:cover}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;font-size:14px}
+nav a{text-decoration:none;opacity:.88}
+nav a:hover{opacity:1;color:#e6c37a}
+#mb{display:none;background:none;border:1px solid #ffffff55;color:#fff;border-radius:6px;padding:6px 12px;font:inherit}
+@media(max-width:820px){#mb{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:60px;background:var(--g2);flex-direction:column;padding:8px 20px 18px;gap:0}nav ul.on{display:flex}nav li a{display:block;padding:11px 0;border-bottom:1px solid #ffffff1c}}
+/* hero */
+.hero{background:var(--g);color:#fff;padding:84px 0 76px;position:relative;overflow:hidden;
+background-image:radial-gradient(circle at 88% 12%,#ffffff14 0 120px,transparent 121px),radial-gradient(circle at 6% 96%,#b8893a33 0 150px,transparent 151px)}
+.ar{font:400 clamp(38px,9vw,76px)/1.5 Amiri,serif;direction:rtl;color:#f1d9a0;margin-bottom:14px}
+.hero h1{font:700 clamp(22px,4vw,30px)/1.3 "Plus Jakarta Sans",sans-serif;margin-bottom:12px}
+.hero p{max-width:56ch;opacity:.92;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.since{display:inline-block;margin-bottom:18px;border:1px solid #f1d9a077;color:#f1d9a0;border-radius:99px;padding:4px 14px;font-size:14px}
+/* grid */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.vals{display:grid;gap:14px}
+.vals div{border-left:4px solid var(--gold);padding:4px 0 4px 16px}
+.vals b{display:block;color:var(--g)}
+.news{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.card .ph{aspect-ratio:16/10;background:linear-gradient(135deg,#cfe0d6,#e9f1ec);display:grid;place-items:center;color:var(--mut);font-size:14px}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .bd{padding:16px}
+.tag{font-size:13px;color:var(--gold);font-weight:700}
+.card h3{font-size:17px;line-height:1.35;margin:4px 0 8px}
+details summary{cursor:pointer;color:var(--g);font-weight:700;font-size:14px;margin-top:8px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.gal .ph{aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#cfe0d6,#e9f1ec);display:grid;place-items:center;font-size:13px;color:var(--mut);overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover}
+.vid{aspect-ratio:16/9;width:100%;border:0;border-radius:10px;background:#000}
+.quote{border:1px solid var(--line);background:#fff;border-radius:10px;padding:22px}
+.quote p{font:400 19px/1.7 Amiri,serif}
+.quote small{display:block;margin-top:10px;color:var(--mut)}
+/* forms */
+form,.box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+label{display:block;font-weight:500;font-size:14px;margin:14px 0 5px}
+input,select{width:100%;padding:11px 12px;border:1px solid #b9cbc0;border-radius:8px;font:inherit;background:#fff}
+fieldset{border:0;padding:0}
+legend{font:700 18px Amiri,serif;color:var(--g);margin-top:8px}
+.note{font-size:14px;color:var(--mut);margin-top:14px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0}
+.chip{padding:9px 16px;border:2px solid var(--g);background:#fff;color:var(--g);border-radius:99px;font-weight:700;cursor:pointer;font:700 14px inherit;font-family:inherit}
+.chip.on{background:var(--g);color:#fff}
+.bar{height:12px;background:#dfeae3;border-radius:99px;overflow:hidden;margin:8px 0 4px}
+.bar i{display:block;height:100%;background:var(--gold)}
+.rek{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--mint);border-radius:8px;padding:12px 14px;margin:10px 0 14px}
+.rek b{font-size:20px;letter-spacing:.04em}
+iframe.map{width:100%;height:300px;border:0;border-radius:10px}
+footer{background:var(--g2);color:#d9e6de;padding:36px 0;font-size:14px}
+footer a{color:#f1d9a0}
+.wa{position:fixed;right:16px;bottom:16px;z-index:30;background:#1fa855;color:#fff;border-radius:99px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px #0004}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.box h3{font:700 20px Amiri,serif;color:var(--g);margin-bottom:8px}
+.box ul,.box ol{padding-left:20px}.box li{margin-bottom:3px}
+.sch{width:100%;border-collapse:collapse}.sch td{padding:7px 8px;border-bottom:1px solid var(--line)}.sch td:first-child{font-weight:700;color:var(--g);width:70px;white-space:nowrap}
+.pend{display:grid;grid-template-columns:260px 1fr;gap:36px;align-items:center}
+.pend img{width:100%;border-radius:12px;background:#e9f1ec}
+.nm{font:700 clamp(24px,5vw,34px)/1.25 Amiri,serif;color:var(--g);margin-top:4px}
+#sej p{margin-bottom:10px;color:#2d3d34}
+@media(max-width:820px){.pend{grid-template-columns:1fr}.pend img{max-width:260px}}
+.kl{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;text-decoration:none}
+.kl b{display:block}.kl span{color:var(--g);font-weight:700}
+nav ul{gap:18px}
+.kal{display:block;width:min(100%,620px);height:auto;margin:0 0 18px}
+.soc{display:flex;gap:10px;margin:16px 0}
+.so{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--g);color:var(--g)}
+.so:hover{background:var(--g);color:#fff}
+.soc.dk .so{border-color:#f1d9a0;color:#f1d9a0}.soc.dk .so:hover{background:#f1d9a0;color:var(--g2)}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#beranda"><img id="logo" alt="Logo" src=""><span>Al-Fattah Siman</span></a>
+<button id="mb" aria-label="Buka menu" aria-expanded="false">Menu</button>
+<nav aria-label="Menu utama"><ul id="menu"></ul></nav>
+</div></header>
+
+<main>
+<section class="hero" id="beranda" data-m="Beranda"><div class="wrap">
+<span class="since">Berdiri sejak 1942</span>
+<img class="kal" src="kaligrafi.png" alt="الْمَعْهَدْ الفَتَّاحْ لِلتَّرْبِيَةِ الإِسْلاَمِيَةْ">
+<h1>Pondok Pesantren Al-Fattah Siman</h1>
+<p>Desa Siman, Kecamatan Sekaran, Kabupaten Lamongan. Tempat tafaqquh fiddin yang siap mengabdikan diri untuk masyarakat, agama, dan bangsa.</p>
+<div class="cta"><a class="btn" href="#pendaftaran">Daftar santri baru</a><a class="btn o" href="#program">Lihat program</a></div>
+</div></section>
+
+<section id="tentang" data-m="Tentang"><div class="wrap">
+<div class="pend"><img src="pendiri.webp" alt="Al-Maghfurlah KH. Abdul Fattah bin Muhammad Rois"><div>
+<span class="tag">Pendiri pesantren</span>
+<div class="nm">Al-Maghfurlah<br>KH. Abdul Fattah bin Muhammad Rois</div>
+<p style="margin-top:8px;color:var(--mut)">Pendiri Pondok Pesantren Al-Fattah, 1942</p></div></div>
+<h2 style="margin-top:44px">Selayang pandang</h2><div id="sej" style="max-width:72ch"></div>
+<figure style="margin-top:40px"><img src="masyayikh.jpg" alt="Dewan masyayikh Pondok Pesantren Al-Fattah" style="border-radius:12px;width:100%;max-width:620px"><figcaption class="note">Dewan masyayikh Pondok Pesantren Al-Fattah</figcaption></figure>
+</div></section>
+<section class="alt" id="program" data-m="Program"><div class="wrap">
+<h2>Visi, misi, dan program</h2><p class="lead">Arah pendidikan dan pilihan program belajar di pesantren.</p>
+<div class="grid" id="progGrid"></div></div></section>
+<section id="kegiatan" data-m="Kegiatan"><div class="wrap">
+<h2>Kegiatan santri</h2><p class="lead">Jadwal harian dan agenda rutin pesantren.</p>
+<div class="tabs" id="tabs"></div><div class="box"><table class="sch" id="sch"></table></div>
+<div class="grid" id="agenda" style="margin-top:20px"></div></div></section>
+
+<section class="alt" id="bahtsul" data-m="Bahtsul Masa’il"><div class="wrap">
+<h2>Hasil rumusan Bahtsul Masa’il</h2><p class="lead">Kumpulan hasil rumusan bahtsul masa’il santri Pondok Pesantren Al-Fattah.</p>
+<a class="btn g" id="bhs" href="#" target="_blank" rel="noopener">Buka kumpulan hasil rumusan</a></div></section>
+<section id="video" data-m="Video"><div class="wrap">
+<h2>Video profil</h2><p class="lead">Kenali suasana belajar dan kehidupan santri.</p>
+<div id="vbox"></div></div></section>
+
+<section id="berita" data-m="Berita"><div class="wrap">
+<h2>Berita pesantren</h2><p class="lead">Kabar terbaru dari kegiatan santri dan pengasuh.</p>
+<div class="news" id="newsList"></div></div></section>
+
+<section class="alt" id="galeri" data-m="Galeri"><div class="wrap">
+<h2>Galeri foto</h2><p class="lead">Dokumentasi aktivitas santri.</p>
+<div class="gal" id="gal"></div></div></section>
+
+<section id="testimoni" data-m="Alumni"><div class="wrap">
+<h2>Testimoni alumni</h2><p class="lead">Cerita para alumni setelah menempuh pendidikan di pesantren.</p>
+<div class="news" id="testi"></div></div></section>
+
+<section class="alt" id="pendaftaran" data-m="Pendaftaran"><div class="wrap two">
+<div><h2>Pendaftaran santri baru</h2><p class="lead" id="ta"></p>
+<div class="box"><h3>Alur pendaftaran</h3><ol id="alur"></ol>
+<h3 style="margin-top:16px">Berkas yang disiapkan</h3><ul id="berkas"></ul>
+<h3 style="margin-top:16px">Waktu pendaftaran</h3><ul id="gel"></ul></div></div>
+<div class="box" style="align-self:start"><h3>Daftar sekarang</h3><p style="margin-bottom:16px">Pendaftaran santri baru dilakukan lewat formulir online. Siapkan berkas di sebelah, lalu isi formulirnya.</p><a class="btn g" id="fdaftar" href="#" target="_blank" rel="noopener">Buka formulir pendaftaran</a></div></div></section>
+
+<section id="donasi" data-m="Donasi"><div class="wrap two">
+<div><h2>Infaq pembangunan dan fasilitas</h2>
+<p class="lead">Infaq Anda digunakan untuk perluasan ruang kelas, kitab, dan fasilitas santri. Berapa pun nominalnya, kami terima dengan terima kasih.</p>
+<div class="box"><b>Progres pembangunan</b>
+<div class="bar"><i id="pb"></i></div>
+<div id="pt" class="note" style="margin-top:4px"></div></div></div>
+<div class="box">
+<b>Pilih nominal</b>
+<div class="chips" id="chips"></div>
+<label for="nom">Atau isi nominal sendiri (Rp)</label><input id="nom" type="number" min="1000" inputmode="numeric">
+<label for="dn">Nama donatur</label><input id="dn" placeholder="Hamba Allah">
+<div class="rek"><div><small id="bank"></small><br><b id="rek"></b><br><small id="an"></small></div><button class="chip" id="cp" type="button">Salin</button></div>
+<button class="btn g" id="kirimInfaq" type="button">Konfirmasi infaq lewat WhatsApp</button>
+<p class="note">Setelah transfer, kirim konfirmasi agar infaq Anda tercatat.</p>
+</div></div></section>
+
+<section class="alt" id="kontak" data-m="Kontak"><div class="wrap two">
+<div><h2>Kontak dan lokasi</h2>
+<p class="lead" style="margin-bottom:14px" id="alamat"></p>
+<div id="kn"></div>
+<div class="soc" id="soc"></div><p class="note" id="ext"></p></div>
+<iframe class="map" id="map" title="Peta lokasi pesantren" loading="lazy"></iframe>
+</div></section>
+</main>
+
+<footer><div class="wrap"><b>Pondok Pesantren Al-Fattah Siman</b><br>Yayasan Pondok Pesantren Al-Fattah Lamongan. Didirikan oleh Al-Maghfurlah KH. Abdul Fattah, 1942.<div class="soc dk" id="soc2"></div>© 2026 Pondok Pesantren Al-Fattah. Hak cipta dilindungi.</div></footer>
+<a class="wa" href="#kontak">Hubungi kami</a>
+
+<script>
+/* ============ DATA: ubah bagian ini saja ============ */
+const C={
+ logo:"logo.png",
+ ta:"2025/2026",   // perbarui tahun ajaran dan jadwal gelombang di bawah
+ gelombang:[["Gelombang 1","1 Januari sampai 29 Februari 2026"],["Gelombang 2","1 April sampai 31 Mei 2026"]],
+ alamat:"Kompleks Yayasan Pondok Pesantren Al-Fattah, Jl. KH. Abdul Fattah, Kembangan, Siman, Kec. Sekaran, Kabupaten Lamongan, Jawa Timur 62261.",
+ kontak:[["Pondok Putra Al-Fattah","6285646463387","+62 856-4646-3387"],["Pondok Putri Al-Fattah","6285792284872","+62 857-9228-4872"],["Ponpes Hikmatul Haromain","6285748123997","+62 857-4812-3997"]],
+ web:"ppalfattahsiman.net",
+ form:"https://forms.gle/AQ6CiWyD7hnnhPdM8",
+ bahtsul:"https://drive.google.com/drive/folders/1ozMgAqBbviFwFTc1lsceF1iKdTX1UMG-",
+ sosial:[["Instagram","https://www.instagram.com/pondoksiman","ig"],["Facebook","https://www.facebook.com/share/1N8Dmi19HV/","fb"],["YouTube","https://youtube.com/@pondoksiman","yt"],["TikTok","https://www.tiktok.com/@pondoksiman","tt"]],
+ map:"https://maps.google.com/maps?q=Pondok+Pesantren+Al+Fattah+Siman+Sekaran+Lamongan&output=embed",
+ youtubeId:"xeksm-b7UvI",
+ bank:"", rekening:"", an:"", target:0, terkumpul:0, nominal:[20000,50000,100000], // rekening kosong = bagian donasi disembunyikan
+ berita:[],        // kosong = bagian berita disembunyikan. Contoh: {judul:"",tgl:"",kat:"",foto:"",isi:""}
+ testimoni:[],     // contoh: {nama:"",angkatan:"",isi:""}
+ galeri:["g1.jpg","g2.jpg","g3.jpg","g4.jpg","g5.jpg"],
+ sejarah:["Pada tahun sebelum didirikannya Pondok Pesantren Al-Fattah, telah nampak indikasi melalui intuisi-intuisi keilahian bahwa di Desa Siman, di belahan timur laut desa, akan berdiri sebuah bangunan yang nantinya mampu menyinari masyarakat dalam kebodohannya, baik kebodohan religi maupun kebodohan lainnya yang berstruktural.","Pada waktu itu, tepatnya tahun 1942, melalui indikasi yang bersifat transendental seorang penduduk Desa Siman, yaitu istri H. Ismail, dalam intuisi kesadarannya pernah melihat sinar terang di ujung sudut desa (timur laut Desa Siman). Ia mengatakan bahwa nantinya di tempat itu akan menjadi sinar bagi masyarakat sekitar. Dalam keadaan yang sama, banyak masyarakat Siman yang mendengar sayup-sayup di tempat itu, yang pada tahun 1942 masih berupa pekarangan kosong yang ditumbuhi pohon bambu dengan lebat. Masih banyak tanda-tanda lainnya yang mengisyaratkan bahwa di Desa Siman akan berdiri sebuah bangunan dan tempat itu akan dijadikan panutan bagi masyarakat sekitarnya.","Tepatlah kiranya bahwa pada tahun 1942, yaitu tanggal 26 Agustus 1942, berdirilah sebuah langgar kecil yang merupakan cikal bakal Pondok Pesantren Al-Fattah. Dari sini terus dikumandangkan pesan-pesan Ilahi kepada umat manusia melalui berbagai disiplin ilmu, baik vital maupun penunjang. Dalam suasana revolusi untuk memperjuangkan kemerdekaan Indonesia pada awal berdirinya pesantren, para santri termasuk juga beliau KH Abdul Fattah menggerakkan massa untuk memanggul senjata melawan penjajah Jepang. Beliau juga pada masa perang mempertahankan kemerdekaan antara tahun 1945 sampai dengan tahun 1949 ikut bergerilya bersama tentara Republik Indonesia sampai di daerah Bojonegoro ujung barat daya."],
+ visi:"Menjadi tempat tafaqquh fiddin yang siap mengabdikan diri untuk masyarakat, agama, dan bangsa.",
+ misi:["Mendidik santri mampu membaca dan memahami kitab-kitab turats ala Ahlussunnah wal Jama’ah.","Membina santri agar menjadi muslim yang peka terhadap problem masyarakat.","Mendidik santri untuk mempunyai kompetensi dalam bahasa Arab."],
+ program:["Madrasah Takwinul Afkar An-Naqdliyah (MATAN PK)","Madrasah Takmiliyyah (Reguler)","Madrasah Tahfidz Al-Qur’an"],
+ unit:["TK Salafiyah","MI Salafiyah","MTs Salafiyah","MA Salafiyah","SMP Simanjaya","SMA Simanjaya","SMA BPPT Unggulan","Universitas Billfath (S1 dan S2)"],
+ ekskul:["Khithobiyah","Diba’iyah","Banjari","Muhadhoroh","Sorogan kitab salaf","Ziarah kubur","Bahtsul Masa’il","Ijtimaiyah (pembacaan wirid-wirid)"],
+ jadwal:{"Reguler":[["03:50","Tahajud"],["04:15","Jamaah shalat Shubuh"],["05:30","Ngaji AMM"],["07:00","Makan pagi"],["07:30","Sekolah"],["12:00","Jamaah shalat Dzuhur"],["13:00","Istirahat"],["15:00","Jamaah shalat Ashar"],["15:30","Ngaji Al-Qur’an"],["16:40","Makan sore"],["17:30","Jamaah shalat Maghrib"],["18:00","Ngaji AMM"],["19:00","Jamaah shalat Isya"],["20:00","Ngaji Diniyah"],["21:30","Belajar dan musyawarah"],["22:00","Istirahat"]],
+  "Program khusus":[["03:50","Tahajud"],["04:15","Jamaah shalat Shubuh"],["05:30","Ngaji AMM"],["07:00","Shalat Dhuha"],["07:30","Makan pagi"],["08:00","Ngaji Diniyah"],["11:15","Bimbel class"],["12:00","Jamaah shalat Dzuhur"],["13:00","Istirahat"],["15:00","Jamaah shalat Ashar"],["15:30","Ngaji Al-Qur’an"],["17:30","Jamaah shalat Maghrib"],["18:00","Ngaji AMM"],["19:00","Jamaah shalat Isya"],["19:30","Makan malam"],["20:00","Belajar dan musyawarah"],["22:00","Istirahat"]]},
+ agenda:{"Kegiatan mingguan":["Ro’an bersama","Khitobiyah","Dziba’an","Musyawarah bahtsul masa’il","Hafalan","Nadzoman dan tasrifan","Ziarah makam","Pembacaan Burdah"],"Kegiatan bulanan":["Ngaji rutinan alumni"],"Kegiatan tahunan":["Haul pondok pesantren dan sesepuh","Imtihan","Peringatan Maulid Nabi"]},
+ alur:["Sowan","Mengisi formulir pendaftaran","Menyerahkan berkas","Foto KTS","Pembayaran administrasi"],
+ berkas:["Pas foto resmi berkopyah, 2 lembar","Fotokopi ijazah terakhir dilegalisir, 2 lembar","Fotokopi SKHUN dilegalisir, 2 lembar","Fotokopi akta kelahiran, 2 lembar","Fotokopi kartu keluarga, 2 lembar","Fotokopi KTP orang tua, 2 lembar","Wali santri menandatangani surat pernyataan bersedia mentaati peraturan pondok"]
+};
+/* ===================================================== */
+const $=s=>document.querySelector(s), rp=n=>"Rp "+Number(n).toLocaleString("id-ID");
+const wa=(n,t)=>`https://wa.me/${n}?text=${encodeURIComponent(t)}`;
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const ul=a=>"<ul>"+a.map(x=>`<li>${esc(x)}</li>`).join("")+"</ul>";
+$("#logo").src=C.logo;
+$("#sej").innerHTML=C.sejarah.map(t=>`<p>${esc(t)}</p>`).join("");
+$("#progGrid").innerHTML=[["Visi",`<p>${esc(C.visi)}</p>`],["Misi","<ol>"+C.misi.map(x=>`<li>${esc(x)}</li>`).join("")+"</ol>"],["Program pesantren",ul(C.program)],["Unit pendidikan formal",ul(C.unit)],["Ekstrakurikuler santri",ul(C.ekskul)]].map(([t,b])=>`<div class="box"><h3>${t}</h3>${b}</div>`).join("");
+const ks=Object.keys(C.jadwal);
+function tab(k){$("#sch").innerHTML=C.jadwal[k].map(r=>`<tr><td>${r[0]}</td><td>${esc(r[1])}</td></tr>`).join("");document.querySelectorAll("#tabs .chip").forEach(b=>b.classList.toggle("on",b.textContent===k))}
+$("#tabs").innerHTML=ks.map(k=>`<button type="button" class="chip">${k}</button>`).join("");
+$("#tabs").onclick=e=>{if(e.target.classList.contains("chip"))tab(e.target.textContent)};tab(ks[0]);
+$("#agenda").innerHTML=Object.entries(C.agenda).map(([t,a])=>`<div class="box"><h3>${t}</h3>${ul(a)}</div>`).join("");
+$("#ta").textContent=`Tahun ajaran ${C.ta}. Isi data calon santri, lalu kirim lewat WhatsApp ke kantor pesantren.`;
+$("#alur").innerHTML=C.alur.map(x=>`<li>${esc(x)}</li>`).join("");
+$("#berkas").innerHTML=C.berkas.map(x=>`<li>${esc(x)}</li>`).join("");
+$("#gel").innerHTML=C.gelombang.map(g=>`<li><b>${esc(g[0])}:</b> ${esc(g[1])}</li>`).join("");
+/* kontak */
+$("#alamat").textContent=C.alamat;
+$("#kn").innerHTML=C.kontak.map(k=>`<a class="kl" href="${wa(k[1],"Assalamu’alaikum, saya ingin bertanya tentang pesantren.")}" target="_blank" rel="noopener"><div><b>${esc(k[0])}</b>${esc(k[2])}</div><span>WhatsApp</span></a>`).join("");
+$("#ext").innerHTML=`Website: ${esc(C.web)}`;
+$("#map").src=C.map;
+/* bagian opsional */
+if(C.youtubeId)$("#vbox").innerHTML=`<iframe class="vid" src="https://www.youtube.com/embed/${esc(C.youtubeId)}" title="Video profil pesantren" allowfullscreen loading="lazy"></iframe>`;else $("#video").hidden=true;
+if(C.berita.length)$("#newsList").innerHTML=C.berita.map(b=>`<article class="card"><div class="ph">${b.foto?`<img src="${esc(b.foto)}" alt="" loading="lazy">`:"Foto berita"}</div><div class="bd"><span class="tag">${esc(b.kat)} · ${esc(b.tgl)}</span><h3>${esc(b.judul)}</h3><details><summary>Baca selengkapnya</summary><p style="margin-top:8px">${esc(b.isi)}</p></details></div></article>`).join("");else $("#berita").hidden=true;
+$("#gal").innerHTML=C.galeri.map((g,i)=>`<div class="ph"><img src="${esc(g)}" alt="Kegiatan santri ${i+1}" loading="lazy"></div>`).join("");
+if(C.testimoni.length)$("#testi").innerHTML=C.testimoni.map(t=>`<div class="quote"><p>“${esc(t.isi)}”</p><small><b>${esc(t.nama)}</b>, ${esc(t.angkatan)}</small></div>`).join("");else $("#testimoni").hidden=true;
+if(C.rekening){let pilih=0;
+ $("#chips").innerHTML=C.nominal.map(n=>`<button type="button" class="chip" data-n="${n}">${n.toLocaleString("id-ID")}</button>`).join("");
+ $("#chips").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;$("#nom").value=b.dataset.n;document.querySelectorAll("#chips .chip").forEach(x=>x.classList.toggle("on",x===b))};
+ const pr=C.target?Math.min(100,C.terkumpul/C.target*100):0;
+ $("#pb").style.width=pr+"%";$("#pt").textContent=`${rp(C.terkumpul)} dari ${rp(C.target)} (${pr.toFixed(1)}%)`;
+ $("#bank").textContent=C.bank;$("#rek").textContent=C.rekening;$("#an").textContent=C.an;
+ $("#cp").onclick=async()=>{try{await navigator.clipboard.writeText(C.rekening);$("#cp").textContent="Tersalin"}catch{$("#cp").textContent="Salin manual"}setTimeout(()=>$("#cp").textContent="Salin",2000)};
+ $("#kirimInfaq").onclick=()=>{const n=+$("#nom").value;if(n<1000){$("#nom").focus();return}
+  window.open(wa(C.kontak[0][1],`Assalamu’alaikum, saya sudah berinfaq.\n\nDonatur: ${$("#dn").value||"Hamba Allah"}\nNominal: ${rp(n)}\nMohon dicatat. Jazakumullah khairan.`),"_blank")};
+}else $("#donasi").hidden=true;
+/* tautan, ikon sosial */
+$("#fdaftar").href=C.form;$("#bhs").href=C.bahtsul;
+const IC={ig:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>',fb:'<path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/>',yt:'<rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/>',tt:'<path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.5 2 4 4.5 4.2"/>'};
+$("#soc").innerHTML=$("#soc2").innerHTML=C.sosial.map(s=>`<a class="so" href="${s[1]}" target="_blank" rel="noopener" aria-label="${s[0]}"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[s[2]]}</svg></a>`).join("");
+/* menu */
+$("#menu").innerHTML=[...document.querySelectorAll("section[data-m]")].filter(s=>!s.hidden).map(s=>`<li><a href="#${s.id}">${s.dataset.m}</a></li>`).join("");
+$("#mb").onclick=()=>{const o=$("#menu").classList.toggle("on");$("#mb").setAttribute("aria-expanded",o)};
+$("#menu").onclick=e=>{if(e.target.tagName==="A")$("#menu").classList.remove("on")};
+</script>
+</body>
+</html>
